@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
 
 instances:
-  - url: plantstore.docs.buildwithfern.com # update this to {yourorg}.docs.buildwithfern.com
+  - url: lichess.docs.buildwithfern.com # update this to {yourorg}.docs.buildwithfern.com
     # custom-domain: plantstore.dev # specify your custom domain when you are ready to go live
 
-title: Plant Store
+title: Lichess
 
 layout:
   searchbar-placement: header
@@ -12,55 +12,33 @@ layout:
   tabs-placement: header
 
 tabs:
-  home:
-    display-name: Home
-    icon: home
-  guides:
-    display-name: Guides
-    icon: book
   API Reference:
     display-name: API Reference
     icon: puzzle
 
 navigation:
-  - tab: home
-    layout:
-      - section: Get Started
-        contents:
-          - page: Welcome
-            path: docs/pages/welcome.mdx
-  - tab: guides
-    layout:
-      - section: Learn
-        contents:
-          - page: Concepts
-            path: docs/pages/concepts.mdx
-          - page: SDKs
-            path: docs/pages/sdks.mdx
-            slug: sdks
   - tab: API Reference
     layout:
+      - page: Welcome
+        path: docs/pages/introduction.mdx
       - api: API Reference
 
 navbar-links:
-  - type: minimal
-    text: Fork this repo
-    url: https://github.com/fern-api/docs-starter
-  - type: filled
-    text: Get a demo
-    url: https://buildwithfern.com/contact?utm_campaign=demo&utm_medium=plantstore&utm_source=navbar
   - type: github
-    value: https://github.com/fern-api/fern
+    value: https://github.com/lichess-org/api
       
 colors:
   accentPrimary:
-    dark: "#81C784"
-    light: "#1B5E20"
+    dark: "#D14C02"
+    light: "#D14C02"
+  background:
+    dark: "#29251F"
+    light: "#E9E6E3"
 
 logo:
-  dark: docs/assets/logo-dark.svg
-  light: docs/assets/logo-light.svg
-  height: 20
-  href: https://buildwithfern.com/?utm_campaign=demo&utm_medium=plantstore&utm_source=logo
+  dark: docs/assets/logo-inverted.svg
+  light: docs/assets/logo.svg
+  height: 40
+  href: https://lichess.org
 
-favicon: docs/assets/favicon.svg
+favicon: docs/assets/favicon-256.png

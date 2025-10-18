@@ -1,5 +1,15 @@
 # yaml-language-server: $schema=https://schema.buildwithfern.dev/generators-yml.json
-
 api:
   specs:
-    - openapi: openapi.yaml
+    - openapi: openapi.json
+groups:
+  python-sdk:
+    generators:
+      - name: fernapi/fern-python-sdk
+        version: 4.31.1
+        output:
+          location: pypi
+          package-name: lichess
+        github:
+          repository: Ryan-Amirthan/lichess-python-sdk
+        config: {}
