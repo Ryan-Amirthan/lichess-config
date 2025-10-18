@@ -1,0 +1,1221 @@
+paths:
+  /api/users/status:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiUsersStatus
+  /api/player:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: player
+  /api/player/top/{nb}/{perfType}:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: playerTopNbPerfType
+  /api/user/{username}:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiUser
+  /api/user/{username}/rating-history:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiUserRatingHistory
+  /api/user/{username}/perf/{perf}:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiUserPerf
+  /api/user/{username}/activity:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiUserActivity
+  /api/puzzle/daily:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleDaily
+  /api/puzzle/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleId
+  /api/puzzle/next:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleNext
+  /api/puzzle/batch/{angle}:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleBatchSelect
+    post:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleBatchSolve
+  /api/puzzle/activity:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleActivity
+  /api/puzzle/replay/{days}/{theme}:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleReplay
+  /api/puzzle/dashboard/{days}:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiPuzzleDashboard
+  /api/storm/dashboard/{username}:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: apiStormDashboard
+  /api/racer:
+    post:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: racerPost
+  /api/racer/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - puzzles
+      x-fern-sdk-method-name: racerGet
+  /api/users:
+    post:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiUsers
+  /api/account:
+    get:
+      x-fern-sdk-group-name:
+        - account
+      x-fern-sdk-method-name: me
+  /api/account/email:
+    get:
+      x-fern-sdk-group-name:
+        - account
+      x-fern-sdk-method-name: email
+  /api/account/preferences:
+    get:
+      x-fern-sdk-method-name: Account
+  /api/account/kid:
+    get:
+      x-fern-sdk-group-name:
+        - account
+      x-fern-sdk-method-name: kid
+    post:
+      x-fern-sdk-group-name:
+        - account
+      x-fern-sdk-method-name: kidPost
+  /api/timeline:
+    get:
+      x-fern-sdk-group-name:
+        - account
+      x-fern-sdk-method-name: timeline
+  /game/export/{gameId}:
+    get:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: gamePgn
+  /api/user/{username}/current-game:
+    get:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: apiUserCurrentGame
+  /api/games/user/{username}:
+    get:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: apiGamesUser
+  /api/games/export/_ids:
+    post:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: exportIds
+  /api/stream/games-by-users:
+    post:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: byUsers
+  /api/stream/games/{streamId}:
+    post:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: byIds
+  /api/stream/games/{streamId}/add:
+    post:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: byIdsAdd
+  /api/account/playing:
+    get:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: apiAccountPlaying
+  /api/stream/game/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: streamGame
+  /api/import:
+    post:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: gameImport
+  /api/games/export/imports:
+    get:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: apiImportedGamesUser
+  /api/games/export/bookmarks:
+    get:
+      x-fern-sdk-group-name:
+        - games
+      x-fern-sdk-method-name: apiExportBookmarks
+  /api/tv/channels:
+    get:
+      x-fern-sdk-group-name:
+        - tv
+      x-fern-sdk-method-name: channels
+  /api/tv/feed:
+    get:
+      x-fern-sdk-group-name:
+        - tv
+      x-fern-sdk-method-name: feed
+  /api/tv/{channel}/feed:
+    get:
+      x-fern-sdk-group-name:
+        - tv
+      x-fern-sdk-method-name: channelFeed
+  /api/tv/{channel}:
+    get:
+      x-fern-sdk-group-name:
+        - tv
+      x-fern-sdk-method-name: channelGames
+  /api/tournament:
+    get:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiTournament
+    post:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiTournamentPost
+  /api/tournament/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: tournament
+    post:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiTournamentUpdate
+  /api/tournament/{id}/join:
+    post:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiTournamentJoin
+  /api/tournament/{id}/withdraw:
+    post:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiTournamentWithdraw
+  /api/tournament/{id}/terminate:
+    post:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiTournamentTerminate
+  /api/tournament/team-battle/{id}:
+    post:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiTournamentTeamBattlePost
+  /api/tournament/{id}/games:
+    get:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: gamesByTournament
+  /api/tournament/{id}/results:
+    get:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: resultsByTournament
+  /api/tournament/{id}/teams:
+    get:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: teamsByTournament
+  /api/user/{username}/tournament/created:
+    get:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiUserNameTournamentCreated
+  /api/user/{username}/tournament/played:
+    get:
+      x-fern-sdk-group-name:
+        - arenaTournaments
+      x-fern-sdk-method-name: apiUserNameTournamentPlayed
+  /api/swiss/new/{teamId}:
+    post:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: apiSwissNew
+  /api/swiss/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: swiss
+  /api/swiss/{id}/edit:
+    post:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: apiSwissUpdate
+  /api/swiss/{id}/schedule-next-round:
+    post:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: apiSwissScheduleNextRound
+  /api/swiss/{id}/join:
+    post:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: apiSwissJoin
+  /api/swiss/{id}/withdraw:
+    post:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: apiSwissWithdraw
+  /api/swiss/{id}/terminate:
+    post:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: apiSwissTerminate
+  /swiss/{id}.trf:
+    get:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: swissTrf
+  /api/swiss/{id}/games:
+    get:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: gamesBySwiss
+  /api/swiss/{id}/results:
+    get:
+      x-fern-sdk-group-name:
+        - swissTournaments
+      x-fern-sdk-method-name: resultsBySwiss
+  /api/team/{teamId}/swiss:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: apiTeamSwiss
+  /api/study/{studyId}/{chapterId}.pgn:
+    get:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: studyChapterPgn
+  /api/study/{studyId}.pgn:
+    get:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: studyAllChaptersPgn
+    head:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: studyAllChaptersHead
+  /api/study/{studyId}/import-pgn:
+    post:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: apiStudyImportPGN
+  /api/study/{studyId}/{chapterId}/tags:
+    post:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: apiStudyChapterTags
+  /study/by/{username}/export.pgn:
+    get:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: studyExportAllPgn
+  /api/study/by/{username}:
+    get:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: studyListMetadata
+  /api/study/{studyId}/{chapterId}:
+    delete:
+      x-fern-sdk-group-name:
+        - studies
+      x-fern-sdk-method-name: apiStudyStudyIdChapterIdDelete
+  /api/broadcast:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: official
+  /api/broadcast/top:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: top
+  /api/broadcast/by/{username}:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: byUser
+  /api/broadcast/search:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: search
+  /broadcast/new:
+    post:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastTourCreate
+  /api/broadcast/{broadcastTournamentId}:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastTourGet
+  /broadcast/{broadcastTournamentId}/players:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastPlayersGet
+  /broadcast/{broadcastTournamentId}/players/{playerId}:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastPlayerGet
+  /broadcast/{broadcastTournamentId}/edit:
+    post:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastTourUpdate
+  /broadcast/{broadcastTournamentId}/new:
+    post:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastRoundCreate
+  /api/broadcast/{broadcastTournamentSlug}/{broadcastRoundSlug}/{broadcastRoundId}:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastRoundGet
+  /broadcast/round/{broadcastRoundId}/edit:
+    post:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastRoundUpdate
+  /api/broadcast/round/{broadcastRoundId}/reset:
+    post:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastRoundReset
+  /api/broadcast/round/{broadcastRoundId}/push:
+    post:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastPush
+  /api/stream/broadcast/round/{broadcastRoundId}.pgn:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastStreamRoundPgn
+  /api/broadcast/round/{broadcastRoundId}.pgn:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastRoundPgn
+  /api/broadcast/{broadcastTournamentId}.pgn:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastAllRoundsPgn
+  /api/broadcast/my-rounds:
+    get:
+      x-fern-sdk-group-name:
+        - broadcasts
+      x-fern-sdk-method-name: broadcastMyRoundsGet
+  /api/fide/player/{playerId}:
+    get:
+      x-fern-sdk-group-name:
+        - fide
+      x-fern-sdk-method-name: playerGet
+  /api/fide/player:
+    get:
+      x-fern-sdk-group-name:
+        - fide
+      x-fern-sdk-method-name: playerSearch
+  /api/simul:
+    get:
+      x-fern-sdk-group-name:
+        - simuls
+      x-fern-sdk-method-name: apiSimul
+  /api/team/{teamId}:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamShow
+  /api/team/all:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamAll
+  /api/team/of/{username}:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamOfUsername
+  /api/team/search:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamSearch
+  /api/team/{teamId}/users:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamIdUsers
+  /api/team/{teamId}/arena:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: apiTeamArena
+  /team/{teamId}/join:
+    post:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamIdJoin
+  /team/{teamId}/quit:
+    post:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamIdQuit
+  /api/team/{teamId}/requests:
+    get:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamRequests
+  /api/team/{teamId}/request/{userId}/accept:
+    post:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamRequestAccept
+  /api/team/{teamId}/request/{userId}/decline:
+    post:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamRequestDecline
+  /api/team/{teamId}/kick/{userId}:
+    post:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamIdKickUserId
+  /team/{teamId}/pm-all:
+    post:
+      x-fern-sdk-group-name:
+        - teams
+      x-fern-sdk-method-name: teamIdPmAll
+  /api/streamer/live:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: streamerLive
+  /api/crosstable/{user1}/{user2}:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiCrosstable
+  /api/player/autocomplete:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: apiPlayerAutocomplete
+  /api/user/{username}/note:
+    get:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: readNote
+    post:
+      x-fern-sdk-group-name:
+        - users
+      x-fern-sdk-method-name: writeNote
+  /api/rel/following:
+    get:
+      x-fern-sdk-group-name:
+        - relations
+      x-fern-sdk-method-name: apiUserFollowing
+  /api/rel/follow/{username}:
+    post:
+      x-fern-sdk-group-name:
+        - relations
+      x-fern-sdk-method-name: followUser
+  /api/rel/unfollow/{username}:
+    post:
+      x-fern-sdk-group-name:
+        - relations
+      x-fern-sdk-method-name: unfollowUser
+  /api/rel/block/{username}:
+    post:
+      x-fern-sdk-group-name:
+        - relations
+      x-fern-sdk-method-name: blockUser
+  /api/rel/unblock/{username}:
+    post:
+      x-fern-sdk-group-name:
+        - relations
+      x-fern-sdk-method-name: unblockUser
+  /api/stream/event:
+    get:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: apiStreamEvent
+  /api/board/seek:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: apiBoardSeek
+  /api/board/game/stream/{gameId}:
+    get:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameStream
+  /api/board/game/{gameId}/move/{move}:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameMove
+  /api/board/game/{gameId}/chat:
+    get:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameChatGet
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameChatPost
+  /api/board/game/{gameId}/abort:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameAbort
+  /api/board/game/{gameId}/resign:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameResign
+  /api/board/game/{gameId}/draw/{accept}:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameDraw
+  /api/board/game/{gameId}/takeback/{accept}:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameTakeback
+  /api/board/game/{gameId}/claim-victory:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameClaimVictory
+  /api/board/game/{gameId}/claim-draw:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameClaimDraw
+  /api/board/game/{gameId}/berserk:
+    post:
+      x-fern-sdk-group-name:
+        - board
+      x-fern-sdk-method-name: gameBerserk
+  /api/bot/online:
+    get:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: apiBotOnline
+  /api/bot/account/upgrade:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: accountUpgrade
+  /api/bot/game/stream/{gameId}:
+    get:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameStream
+  /api/bot/game/{gameId}/move/{move}:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameMove
+  /api/bot/game/{gameId}/chat:
+    get:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameChatGet
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameChat
+  /api/bot/game/{gameId}/abort:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameAbort
+  /api/bot/game/{gameId}/resign:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameResign
+  /api/bot/game/{gameId}/draw/{accept}:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameDraw
+  /api/bot/game/{gameId}/takeback/{accept}:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameTakeback
+  /api/bot/game/{gameId}/claim-victory:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameClaimVictory
+  /api/bot/game/{gameId}/claim-draw:
+    post:
+      x-fern-sdk-group-name:
+        - bot
+      x-fern-sdk-method-name: gameClaimDraw
+  /api/challenge:
+    get:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeList
+  /api/challenge/{username}:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeCreate
+  /api/challenge/{challengeId}/show:
+    get:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeShow
+  /api/challenge/{challengeId}/accept:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeAccept
+  /api/challenge/{challengeId}/decline:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeDecline
+  /api/challenge/{challengeId}/cancel:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeCancel
+  /api/challenge/ai:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeAi
+  /api/challenge/open:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeOpen
+  /api/challenge/{gameId}/start-clocks:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: challengeStartClocks
+  /api/bulk-pairing:
+    get:
+      x-fern-sdk-group-name:
+        - bulkPairings
+      x-fern-sdk-method-name: bulkPairingList
+    post:
+      x-fern-sdk-group-name:
+        - bulkPairings
+      x-fern-sdk-method-name: bulkPairingCreate
+  /api/bulk-pairing/{id}/start-clocks:
+    post:
+      x-fern-sdk-group-name:
+        - bulkPairings
+      x-fern-sdk-method-name: bulkPairingStartClocks
+  /api/bulk-pairing/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - bulkPairings
+      x-fern-sdk-method-name: bulkPairingGet
+    delete:
+      x-fern-sdk-group-name:
+        - bulkPairings
+      x-fern-sdk-method-name: bulkPairingDelete
+  /api/bulk-pairing/{id}/games:
+    get:
+      x-fern-sdk-group-name:
+        - bulkPairings
+      x-fern-sdk-method-name: bulkPairingIdGamesGet
+  /api/round/{gameId}/add-time/{seconds}:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: roundAddTime
+  /api/token/admin-challenge:
+    post:
+      x-fern-sdk-group-name:
+        - challenges
+      x-fern-sdk-method-name: adminChallengeTokens
+  /inbox/{username}:
+    post:
+      x-fern-sdk-group-name:
+        - messaging
+      x-fern-sdk-method-name: inboxUsername
+  /api/cloud-eval:
+    get:
+      x-fern-sdk-group-name:
+        - analysis
+      x-fern-sdk-method-name: apiCloudEval
+  /api/external-engine:
+    get:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEngineList
+    post:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEngineCreate
+  /api/external-engine/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEngineGet
+    put:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEnginePut
+    delete:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEngineDelete
+  /api/external-engine/{id}/analyse:
+    post:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEngineAnalyse
+  /api/external-engine/work:
+    post:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEngineAcquire
+  /api/external-engine/work/{id}:
+    post:
+      x-fern-sdk-group-name:
+        - externalEngine
+      x-fern-sdk-method-name: apiExternalEngineSubmit
+  /oauth:
+    get:
+      x-fern-sdk-method-name: OAuth
+  /api/token:
+    post:
+      x-fern-sdk-group-name:
+        - oAuth
+      x-fern-sdk-method-name: apiToken
+    delete:
+      x-fern-sdk-group-name:
+        - oAuth
+      x-fern-sdk-method-name: apiTokenDelete
+  /api/token/test:
+    post:
+      x-fern-sdk-group-name:
+        - oAuth
+      x-fern-sdk-method-name: tokenTest
+  /masters:
+    get:
+      x-fern-sdk-group-name:
+        - openingExplorer
+      x-fern-sdk-method-name: master
+  /lichess:
+    get:
+      x-fern-sdk-group-name:
+        - openingExplorer
+      x-fern-sdk-method-name: lichess
+  /player:
+    get:
+      x-fern-sdk-group-name:
+        - openingExplorer
+      x-fern-sdk-method-name: player
+  /master/pgn/{gameId}:
+    get:
+      x-fern-sdk-group-name:
+        - openingExplorer
+      x-fern-sdk-method-name: masterGame
+  /standard:
+    get:
+      x-fern-sdk-group-name:
+        - tablebase
+      x-fern-sdk-method-name: standard
+  /atomic:
+    get:
+      x-fern-sdk-group-name:
+        - tablebase
+      x-fern-sdk-method-name: atomic
+  /antichess:
+    get:
+      x-fern-sdk-group-name:
+        - tablebase
+      x-fern-sdk-method-name: antichessAtomic
+components:
+  schemas:
+    Flair:
+      x-fern-type-name: Flair
+    Title:
+      x-fern-type-name: Title
+    PatronColor:
+      x-fern-type-name: PatronColor
+    TopUser:
+      x-fern-type-name: TopUser
+    PerfTop10:
+      x-fern-type-name: PerfTop10
+    Top10s:
+      x-fern-type-name: Top10s
+    Leaderboard:
+      x-fern-type-name: Leaderboard
+    Perf:
+      x-fern-type-name: Perf
+    PuzzleModePerf:
+      x-fern-type-name: PuzzleModePerf
+    Perfs:
+      x-fern-type-name: Perfs
+    Profile:
+      x-fern-type-name: Profile
+    PlayTime:
+      x-fern-type-name: PlayTime
+    User:
+      x-fern-type-name: User
+    Count:
+      x-fern-type-name: Count
+    UserStreamer:
+      x-fern-type-name: UserStreamer
+    UserExtended:
+      x-fern-type-name: UserExtended
+    RatingHistory:
+      x-fern-type-name: RatingHistory
+    PerfType:
+      x-fern-type-name: PerfType
+    PerfStat:
+      x-fern-type-name: PerfStat
+    UserActivityScore:
+      x-fern-type-name: UserActivityScore
+    GameColor:
+      x-fern-type-name: GameColor
+    VariantKey:
+      x-fern-type-name: VariantKey
+    UserActivityCorrespondenceGame:
+      x-fern-type-name: UserActivityCorrespondenceGame
+    UserActivityFollowList:
+      x-fern-type-name: UserActivityFollowList
+    UserActivity:
+      x-fern-type-name: UserActivity
+    PuzzleAndGame:
+      x-fern-type-name: PuzzleAndGame
+    PuzzleBatchSelect:
+      x-fern-type-name: PuzzleBatchSelect
+    PuzzleBatchSolveRequest:
+      x-fern-type-name: PuzzleBatchSolveRequest
+    PuzzleBatchSolveResponse:
+      x-fern-type-name: PuzzleBatchSolveResponse
+    PuzzleActivity:
+      x-fern-type-name: PuzzleActivity
+    PuzzleReplay:
+      x-fern-type-name: PuzzleReplay
+    PuzzlePerformance:
+      x-fern-type-name: PuzzlePerformance
+    PuzzleDashboard:
+      x-fern-type-name: PuzzleDashboard
+    PuzzleStormDashboard:
+      x-fern-type-name: PuzzleStormDashboard
+    PuzzleRacer:
+      x-fern-type-name: PuzzleRacer
+    PuzzleRaceResults:
+      x-fern-type-name: PuzzleRaceResults
+    NotFound:
+      x-fern-type-name: NotFound
+    UserPreferences:
+      x-fern-type-name: UserPreferences
+    Ok:
+      x-fern-type-name: Ok
+    TimelineEntryFollow:
+      x-fern-type-name: TimelineEntryFollow
+    TimelineEntryTeamJoin:
+      x-fern-type-name: TimelineEntryTeamJoin
+    TimelineEntryTeamCreate:
+      x-fern-type-name: TimelineEntryTeamCreate
+    TimelineEntryForumPost:
+      x-fern-type-name: TimelineEntryForumPost
+    TimelineEntryBlogPost:
+      x-fern-type-name: TimelineEntryBlogPost
+    TimelineEntryUblogPost:
+      x-fern-type-name: TimelineEntryUblogPost
+    TimelineEntryTourJoin:
+      x-fern-type-name: TimelineEntryTourJoin
+    TimelineEntryGameEnd:
+      x-fern-type-name: TimelineEntryGameEnd
+    TimelineEntrySimul:
+      x-fern-type-name: TimelineEntrySimul
+    TimelineEntryStudyLike:
+      x-fern-type-name: TimelineEntryStudyLike
+    TimelineEntryPlanStart:
+      x-fern-type-name: TimelineEntryPlanStart
+    TimelineEntryPlanRenew:
+      x-fern-type-name: TimelineEntryPlanRenew
+    TimelineEntryUblogPostLike:
+      x-fern-type-name: TimelineEntryUblogPostLike
+    TimelineEntryStreamStart:
+      x-fern-type-name: TimelineEntryStreamStart
+    Timeline:
+      x-fern-type-name: Timeline
+    GamePgn:
+      x-fern-type-name: GamePgn
+    Speed:
+      x-fern-type-name: Speed
+    GameStatusName:
+      x-fern-type-name: GameStatusName
+    LightUser:
+      x-fern-type-name: LightUser
+    GameUser:
+      x-fern-type-name: GameUser
+    GameUsers:
+      x-fern-type-name: GameUsers
+    GameOpening:
+      x-fern-type-name: GameOpening
+    GameMoveAnalysis:
+      x-fern-type-name: GameMoveAnalysis
+    GameJson:
+      x-fern-type-name: GameJson
+    GameStream:
+      x-fern-type-name: GameStream
+    GameSource:
+      x-fern-type-name: GameSource
+    Variant:
+      x-fern-type-name: Variant
+    MoveStream:
+      x-fern-type-name: MoveStream
+    TvGame:
+      x-fern-type-name: TvGame
+    TvFeed:
+      x-fern-type-name: TvFeed
+    Clock:
+      x-fern-type-name: Clock
+    ArenaStatus:
+      x-fern-type-name: ArenaStatus
+    ArenaPerf:
+      x-fern-type-name: ArenaPerf
+    ArenaRatingObj:
+      x-fern-type-name: ArenaRatingObj
+    ArenaPosition:
+      x-fern-type-name: ArenaPosition
+    ArenaTournament:
+      x-fern-type-name: ArenaTournament
+    ArenaTournaments:
+      x-fern-type-name: ArenaTournaments
+    FromPositionFEN:
+      x-fern-type-name: FromPositionFEN
+    Verdict:
+      x-fern-type-name: Verdict
+    Verdicts:
+      x-fern-type-name: Verdicts
+    ArenaSheet:
+      x-fern-type-name: ArenaSheet
+    ArenaTournamentFull:
+      x-fern-type-name: ArenaTournamentFull
+    Error:
+      x-fern-type-name: Error
+    ArenaTournamentPlayer:
+      x-fern-type-name: ArenaTournamentPlayer
+    ArenaTournamentPlayed:
+      x-fern-type-name: ArenaTournamentPlayed
+    SwissFromPositionFEN:
+      x-fern-type-name: SwissFromPositionFEN
+    SwissStatus:
+      x-fern-type-name: SwissStatus
+    SwissTournament:
+      x-fern-type-name: SwissTournament
+    SwissUnauthorisedEdit:
+      x-fern-type-name: SwissUnauthorisedEdit
+    StudyPgn:
+      x-fern-type-name: StudyPgn
+    StudyImportPgnChapters:
+      x-fern-type-name: StudyImportPgnChapters
+    StudyMetadata:
+      x-fern-type-name: StudyMetadata
+    BroadcastTour:
+      x-fern-type-name: BroadcastTour
+    BroadcastGroupTour:
+      x-fern-type-name: BroadcastGroupTour
+    BroadcastGroup:
+      x-fern-type-name: BroadcastGroup
+    BroadcastCustomPoints:
+      x-fern-type-name: BroadcastCustomPoints
+    BroadcastCustomPointsPerColor:
+      x-fern-type-name: BroadcastCustomPointsPerColor
+    BroadcastCustomScoring:
+      x-fern-type-name: BroadcastCustomScoring
+    BroadcastRoundInfo:
+      x-fern-type-name: BroadcastRoundInfo
+    BroadcastWithRounds:
+      x-fern-type-name: BroadcastWithRounds
+    BroadcastWithLastRound:
+      x-fern-type-name: BroadcastWithLastRound
+    BroadcastTop:
+      x-fern-type-name: BroadcastTop
+    BroadcastByUser:
+      x-fern-type-name: BroadcastByUser
+    BroadcastTiebreakExtendedCode:
+      x-fern-type-name: BroadcastTiebreakExtendedCode
+    BroadcastForm:
+      x-fern-type-name: BroadcastForm
+    BroadcastPlayerWithFed:
+      x-fern-type-name: BroadcastPlayerWithFed
+    BroadcastPlayerTiebreak:
+      x-fern-type-name: BroadcastPlayerTiebreak
+    BroadcastPlayerEntry:
+      x-fern-type-name: BroadcastPlayerEntry
+    BroadcastGameEntry:
+      x-fern-type-name: BroadcastGameEntry
+    BroadcastPlayerEntryWithFideAndGames:
+      x-fern-type-name: BroadcastPlayerEntryWithFideAndGames
+    BroadcastRoundFormName:
+      x-fern-type-name: BroadcastRoundFormName
+    BroadcastRoundForm:
+      x-fern-type-name: BroadcastRoundForm
+    BroadcastRoundStudyInfo:
+      x-fern-type-name: BroadcastRoundStudyInfo
+    BroadcastRoundNew:
+      x-fern-type-name: BroadcastRoundNew
+    BroadcastRoundGame:
+      x-fern-type-name: BroadcastRoundGame
+    BroadcastRound:
+      x-fern-type-name: BroadcastRound
+    BroadcastPgnPushTags:
+      x-fern-type-name: BroadcastPgnPushTags
+    BroadcastPgnPush:
+      x-fern-type-name: BroadcastPgnPush
+    BroadcastMyRound:
+      x-fern-type-name: BroadcastMyRound
+    FIDEPlayer:
+      x-fern-type-name: FIDEPlayer
+    Simul:
+      x-fern-type-name: Simul
+    Team:
+      x-fern-type-name: Team
+    TeamPaginatorJson:
+      x-fern-type-name: TeamPaginatorJson
+    ArenaStatusName:
+      x-fern-type-name: ArenaStatusName
+    TeamRequest:
+      x-fern-type-name: TeamRequest
+    TeamRequestWithUser:
+      x-fern-type-name: TeamRequestWithUser
+    Crosstable:
+      x-fern-type-name: Crosstable
+    LightUserOnline:
+      x-fern-type-name: LightUserOnline
+    UserNote:
+      x-fern-type-name: UserNote
+    GameStatusId:
+      x-fern-type-name: GameStatusId
+    GameStatus:
+      x-fern-type-name: GameStatus
+    GameEventOpponent:
+      x-fern-type-name: GameEventOpponent
+    GameCompat:
+      x-fern-type-name: GameCompat
+    GameEventInfo:
+      x-fern-type-name: GameEventInfo
+    GameStartEvent:
+      x-fern-type-name: GameStartEvent
+    GameFinishEvent:
+      x-fern-type-name: GameFinishEvent
+    ChallengeStatus:
+      x-fern-type-name: ChallengeStatus
+    ChallengeUser:
+      x-fern-type-name: ChallengeUser
+    TimeControl:
+      x-fern-type-name: TimeControl
+    ChallengeJson:
+      x-fern-type-name: ChallengeJson
+    ChallengeEvent:
+      x-fern-type-name: ChallengeEvent
+    ChallengeCanceledEvent:
+      x-fern-type-name: ChallengeCanceledEvent
+    ChallengeDeclinedJson:
+      x-fern-type-name: ChallengeDeclinedJson
+    ChallengeDeclinedEvent:
+      x-fern-type-name: ChallengeDeclinedEvent
+    GameEventPlayer:
+      x-fern-type-name: GameEventPlayer
+    GameStateEvent:
+      x-fern-type-name: GameStateEvent
+    GameFullEvent:
+      x-fern-type-name: GameFullEvent
+    ChatLineEvent:
+      x-fern-type-name: ChatLineEvent
+    OpponentGoneEvent:
+      x-fern-type-name: OpponentGoneEvent
+    GameChat:
+      x-fern-type-name: GameChat
+    ChallengeOpenJson:
+      x-fern-type-name: ChallengeOpenJson
+    BulkPairing:
+      x-fern-type-name: BulkPairing
+    CloudEval:
+      x-fern-type-name: CloudEval
+    UciVariant:
+      x-fern-type-name: UciVariant
+    ExternalEngine:
+      x-fern-type-name: ExternalEngine
+    ExternalEngineRegistration:
+      x-fern-type-name: ExternalEngineRegistration
+    ExternalEngineWorkCommon:
+      x-fern-type-name: ExternalEngineWorkCommon
+    ExternalEngineWork:
+      x-fern-type-name: ExternalEngineWork
+    OAuthError:
+      x-fern-type-name: OAuthError
+    OpeningExplorerOpening:
+      x-fern-type-name: OpeningExplorerOpening
+    OpeningExplorerGamePlayer:
+      x-fern-type-name: OpeningExplorerGamePlayer
+    OpeningExplorerMastersGame:
+      x-fern-type-name: OpeningExplorerMastersGame
+    OpeningExplorerMasters:
+      x-fern-type-name: OpeningExplorerMasters
+    OpeningExplorerLichessGame:
+      x-fern-type-name: OpeningExplorerLichessGame
+    OpeningExplorerLichess:
+      x-fern-type-name: OpeningExplorerLichess
+    OpeningExplorerPlayerGame:
+      x-fern-type-name: OpeningExplorerPlayerGame
+    OpeningExplorerPlayer:
+      x-fern-type-name: OpeningExplorerPlayer
+    Move:
+      x-fern-type-name: Move
+    TablebaseJson:
+      x-fern-type-name: TablebaseJson

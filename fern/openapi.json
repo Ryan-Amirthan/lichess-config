@@ -44325,7 +44325,15 @@
             "enum": [
               "+",
               "#"
-            ]
+            ],
+            "x-fern-enum": {
+              "+": {
+                "name": "Check"
+              },
+              "#": {
+                "name": "Checkmate"
+              }
+            }
           },
           "thinkTime": {
             "type": "integer"
@@ -44338,7 +44346,21 @@
               "1-0",
               "0-1",
               "½-½"
-            ]
+            ],
+            "x-fern-enum": {
+              "*": {
+                "name": "ALL"
+              },
+              "1-0": {
+                "name": "One0"
+              },
+              "0-1": {
+                "name": "Zero1"
+              },
+              "½-½": {
+                "name": "Draw"
+              }
+            }
           }
         },
         "required": [
