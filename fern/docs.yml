@@ -2,7 +2,7 @@
 
 instances:
   - url: lichess.docs.buildwithfern.com # update this to {yourorg}.docs.buildwithfern.com
-    # custom-domain: plantstore.dev # specify your custom domain when you are ready to go live
+    custom-domain: lichess.ferndocs.com # specify your custom domain when you are ready to go live
 
 title: Lichess
 
